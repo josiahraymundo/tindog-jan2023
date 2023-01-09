@@ -12,7 +12,7 @@
   padding-bottom: 4.5rem;
 }
 .nav-item {
-  padding: 0 18px
+  padding: 0 18px;
 }
 .nav-link {
   font-size: 1.2rem;
@@ -23,17 +23,117 @@
   margin: 5% 3% 5% 0;
 }
 /* Title image */
+.title-img-col {
+  position: relative;
+}
 .title-img {
   width: 60%;
   transform: rotate(25deg);
+  position: absolute;
+  top: -25px;
+  right: 30%;
+  z-index: 0;
 }
-
 .container-fluid {
   padding: 3% 15%;
+  padding-bottom: 7%;
+}
+/* Features Row */
+.features-row {
+  text-align: center;
+}
+.features-row p {
+  color: #8f8f8f;
+  padding: 0 50px;
+  margin-bottom: 0;
+}
+.features-row i {
+  font-size: 4rem;
+  color: #ef8172;
+}
+.features-row i:hover {
+  color: #ff4c68;
+}
+.features-row h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 1.5rem;
+  margin-top: 16px;
+}
+#features {
+  background-color: whitesmoke;
+  position: relative;
+}
+#features .container-fluid {
+  padding-top: 0px;
+  padding-bottom: 10%;
+}
+.feature {
+  margin-top: 14%;
 }
 
+/* Testimonials Section */
+/* #testimonials { */
+.carousel-item {
+  padding: 7% 15%;
+  text-align: center;
+  background-color: #ff4c68;
+  color: whitesmoke;
+}
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+/* Press */
+#press {
+  padding-bottom: 3%;
+  text-align: center;
+  background-color: #ff4c68;
+}
+/* press-logo */
+#press img {
+  margin: 20px 20px 50px;
+  width: 15%;
+}
+/* Pricing  */
+#pricing {
+  padding: 100px;
+  text-align: center;
+}
+
+.pricing-col {
+  padding: 3% 2%;
+}
+
+/* CTA  */
+#cta {
+  background-color: #ff4c68;
+  padding: 7% 15% 3%;
+  text-align: center;
+  color: whitesmoke;
+}
+#cta h3 {
+  font-size: 3rem;
+}
+/* Footer  */
+#footer {
+  background-color: whitesmoke;
+  padding: 7% 15%;
+  text-align: center;
+  color: #8f8f8f;
+}
+#footer p {
+  font-size: 1.2em;
+  line-height: 3;
+}
+#footer i {
+  color: #212529;
+  margin: 1em;
+}
+/* HTML Tags */
 body {
-  font-family: "Montserrat",Verdana, sans-serif;
+  font-family: "Montserrat", Verdana, sans-serif;
 }
 h1 {
   color: whitesmoke;
@@ -41,4 +141,31 @@ h1 {
   font-weight: 900;
   font-size: 3.5rem;
   line-height: 1.5;
+}
+h2 {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+h3 {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-weight: 900;
+}
+
+@media screen and (max-width: 1028px) {
+  h1 {
+    font-size: 3.2rem;
+    line-height: 1;
+  }
+  #title {
+    text-align: center;
+  }
+  .title-img {
+    width: 60%;
+    transform: rotate(0deg);
+    position: static;
+    right: 30%;
+  }
 }
